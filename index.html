@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FLIP - The Crypto Chihuahua</title>
+    <link rel="icon" href="/img/5904450773884980317.jpg" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Fredoka', sans-serif;
+            background: #e0f7fa;
+            /* Light blue background */
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        header {
+            background: linear-gradient(135deg, #00796b, #4db6ac);
+            /* Green shades */
+            text-align: center;
+            padding: 4rem 1rem;
+            position: relative;
+            clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+            animation: floatText 3s ease-in-out infinite alternate;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            font-size: 3rem;
+            color: white;
+            text-shadow: 1px 1px 4px #004d40;
+        }
+
+        header p {
+            font-size: 1.5rem;
+            color: #fff;
+            margin-top: 0.5rem;
+        }
+
+        section {
+            padding: 4rem 1rem;
+            max-width: 1200px;
+            margin: auto;
+            animation: fadeInUp 1s ease-out both;
+            opacity: 0;
+            transform: translateY(30px);
+            background: #ffffff;
+            /* White background for sections */
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        section:nth-child(even) {
+            background: #b2dfdb;
+            /* Light green for even sections */
+            clip-path: polygon(0 5%, 100% 0%, 100% 95%, 0% 100%);
+        }
+
+        section.revealed {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        section h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            color: #004d40;
+            /* Dark green */
+            margin-bottom: 1rem;
+        }
+
+        section p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto 2rem auto;
+            text-align: center;
+            color: #444;
+        }
+
+        .images {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1.5rem;
+            padding: 1rem;
+            justify-items: center;
+        }
+
+        .flip-image {
+            width: 100%;
+            max-width: 200px;
+            border-radius: 1.5rem;
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+            box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+        }
+
+        .flip-image:hover {
+            transform: scale(1.05) rotate(1deg);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+        }
+
+        footer {
+            background: linear-gradient(to right, #00796b, #4db6ac);
+            /* Green shades */
+            text-align: center;
+            padding: 2rem;
+            font-size: 1rem;
+            color: #fff;
+            clip-path: polygon(0 0, 100% 5%, 100% 100%, 0% 95%);
+            box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Bar graph styles */
+        .bar-graph {
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            margin: auto;
+            margin-bottom: 1rem;
+        }
+
+        .bar {
+            width: 50px;
+            margin: 0 10px;
+            background-color: #004d40;
+            /* Dark green */
+            transition: height 0.3s ease;
+            border-radius: 5px;
+        }
+
+        .social-icons {
+            text-align: center;
+            font-size: xx-large;
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes floatText {
+            0% {
+                transform: translateY(0);
+            }
+
+            100% {
+                transform: translateY(10px);
+            }
+        }
+
+        /* Mobile tweaks */
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            header p {
+                font-size: 1rem;
+            }
+
+            section h2 {
+                font-size: 1.7rem;
+            }
+
+            section p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>🚀 FLIP: The Crypto Chihuahua</h1>
+        <p>Small Dog. Big Vision. Bigger Chart.</p>
+    </header>
+
+    <section class="intro">
+        <h2>Meet Flip 🐶</h2>
+        <p>A tiny chihuahua named <strong>"Flip"</strong> yipped with ambition. Barely taller than a stack of dog
+            biscuits, Flip was often overlooked, his small stature earning him giggles rather than respect. But Flip had
+            a dream bigger than the tallest blockchain: he wanted to launch a cryptocurrency.</p>
+        <div class="images">
+            <img src="/img/5904450773884980315.jpg" style="max-width: 1000px;" class="flip-image" alt="Flip image 2">
+        </div>
+    </section>
+
+    <section class="journey">
+        <h2>The Journey Begins ✨</h2>
+        <p>Flip’s fluffy ears twitched as he sat in his doghouse, a repurposed laptop glowing under his paws. “The chart
+            only goes up!” he barked, scribbling tokenomics on a chewed-up notepad. Flip’s heart raced; this wasn’t just
+            about crypto but about showing the world a small pup could make a big difference.</p>
+        <div class="images">
+            <img src="/img/5904450773884980314.jpg" class="flip-image" alt="Flip image 3">
+            <img src="/img/5904450773884980317.jpg" class="flip-image" alt="Flip image 4">
+        </div>
+    </section>
+
+    <section class="community">
+        <h2>Fighting Doubt, Gaining Followers 🧠</h2>
+        <p>The ETH community wasn’t kind at first. “A chihuahua running a coin?” scoffed a sleek greyhound coder. “Stick
+            to fetching, pup.” But Flip wasn’t deterred. He spent nights learning Solidity, his tiny claws clacking on
+            the keyboard, and days rallying support on X, posting memes of himself in a superhero cape with the caption:
+            “Small Dog, Big HODL!”</p>
+        <div class="images">
+            <img src="/img/5904450773884980313.jpg" class="flip-image" alt="Flip image 5">
+            <img src="/img/5904273481929968917.jpg" class="flip-image" alt="Flip image 6">
+        </div>
+    </section>
+
+    <section class="launch">
+        <h2>The FLIPPENING Begins 🔥</h2>
+        <p>Launch day arrived, and Flip’s tail wagged like a metronome. FLIP went live with a smart contract tighter
+            than a leash and with some spicy extra features which would help creating huge FOMO. The community poured
+            in, drawn by Flip’s story and the coin’s promise. Transactions buzzed, Puppy Power flowed and transformed
+            into "THE FLIPPENING", and the chart—oh, the chart!—climbed like a rocket. “Up only!” howled Flip, watching
+            the value soar.</p>
+        <div class="images">
+            <img src="/img/5904273481929968916.jpg" class="flip-image" alt="Flip image 7">
+            <img src="/img/5904273481929968915.jpg" class="flip-image" alt="Flip image 8">
+        </div>
+    </section>
+
+    <section class="legacy">
+        <h2>A Legendary Pup 🌕</h2>
+        <p>Word spread beyond ETH chain. Flip’s inbox overflowed with messages: “You proved us wrong, little guy!” Even
+            the greyhound coder sent a grudging “Woof—nice work.” One evening, Flip gazed at the starry sky, his laptop
+            humming. "FLIP" wasn’t just a coin; it was his legacy. He’d shown the world that dreams, not size, defined
+            success. With a satisfied yip, Flip curled up, dreaming of the next moon his coin would conquer. And the
+            chart? It only went up.</p>
+        <div class="images">
+            <img src="/img/5904273481929968914.jpg" class="flip-image" alt="Flip image 9">
+            <img src="/img/5904273481929968913.jpg" class="flip-image" alt="Flip image 10">
+        </div>
+    </section>
+
+    <section class="social-media">
+        <h2>Join the Community 🌐</h2>
+        <p>Follow us on social media to stay updated!</p>
+        <div class="social-icons">
+            <a href="https://x.com/FlipOnETH" target="_blank"><i class="fab fa-twitter"></i></a> |
+            <!-- <a href="https://instagram.com/FlipCoin" target="_blank"><i class="fab fa-instagram"></i></a> | -->
+            <a href="https://t.me/FlipOnETH" target="_blank"><i class="fab fa-telegram"></i> </a>
+        </div>
+    </section>
+
+    <!-- <section class="bar-graph">
+        <h2>FLIP Coin Growth 📈</h2>
+        <div class="bar-graph">
+            <div class="bar" style="height: 80%;"></div>
+            <div class="bar" style="height: 60%;"></div>
+            <div class="bar" style="height: 90%;"></div>
+            <div class="bar" style="height: 70%;"></div>
+        </div>
+        <p>Growth over the last few months!</p>
+    </section> -->
+
+    <footer>
+        <p>&copy; 2025 FLIP Coin — "The chart only goes up!" 🚀</p>
+    </footer>
+
+    <script>
+        // Reveal animation on scroll
+        const sections = document.querySelectorAll('section');
+        const options = { threshold: 0.1 };
+
+        const revealSection = (entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('revealed');
+                    observer.unobserve(entry.target);
+                }
+            });
+        };
+
+        const observer = new IntersectionObserver(revealSection, options);
+        sections.forEach(sec => observer.observe(sec));
+    </script>
+</body>
+
+</html>
