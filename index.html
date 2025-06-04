@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FLIP - The Crypto Chihuahua</title>
-    <link rel="icon" href="/img/5904450773884980317.jpg" type="image/png">
+    <link rel="icon" href="/img/5904450773884980313.jpg" type="image/png">
     <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
@@ -25,15 +25,28 @@
         }
 
         header {
-            background: linear-gradient(135deg, #00796b, #4db6ac);
-            /* Green shades */
+            background:
+                linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+                /* semi-dark overlay */
+                url('/img/5904450773884980315.jpg') center center / cover no-repeat;
             text-align: center;
             padding: 4rem 1rem;
             position: relative;
             clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
             animation: floatText 3s ease-in-out infinite alternate;
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            color: #ffffff;
+            min-height: 400px;
+            /* ensures a good visible area, adjust as needed */
+            width: 100%;
+            /* ensures full width */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
         }
+
+
 
         header h1 {
             font-size: 3rem;
@@ -188,7 +201,7 @@
 
 <body>
     <header>
-        <h1>🚀 FLIP: The Crypto Chihuahua</h1>
+        <h1>FLIP: The Crypto Chihuahua</h1>
         <p>Small Dog. Big Vision. Bigger Chart.</p>
     </header>
 
@@ -198,7 +211,7 @@
             biscuits, Flip was often overlooked, his small stature earning him giggles rather than respect. But Flip had
             a dream bigger than the tallest blockchain: he wanted to launch a cryptocurrency.</p>
         <div class="images">
-            <img src="/img/5904450773884980315.jpg" style="max-width: 1000px;" class="flip-image" alt="Flip image 2">
+            <!-- <img src="/img/5904450773884980315.jpg" style="max-width: 1000px;" class="flip-image" alt="Flip image 2"> -->
         </div>
     </section>
 
@@ -250,6 +263,46 @@
             <img src="/img/5904273481929968913.jpg" class="flip-image" alt="Flip image 10">
         </div>
     </section>
+
+    <section class="roadmap">
+        <h2>$FLIP'S ROADMAP 🗺️</h2>
+        <p><strong>Phase 1:</strong></p>
+        <ul
+            style="list-style-type: none; font-size: 1.1rem; max-width: 800px; margin: 0 auto 2rem auto; padding-left: 0;">
+            <li>🐕 Official launch of $FLIP on the ETH network</li>
+            <li>🐕 Initial listings on decentralized exchanges (DEXSCREENER/DEXTOOLS) ETC.</li>
+            <li>🐕 Community development and regular interactions between team and investors</li>
+            <li>🐕 Huge Expansion with marketing campaigns with an experienced marketer</li>
+            <li>🐕 Strategic partnerships with major influencers and content creators</li>
+        </ul>
+        <p><strong>Phase 2:</strong></p>
+        <ul
+            style="list-style-type: none; font-size: 1.1rem; max-width: 800px; margin: 0 auto 2rem auto; padding-left: 0;">
+            <li>🐕 Listing on major centralized exchanges (CEX)</li>
+            <li>🐕 Further Development</li>
+        </ul>
+        <p><strong>Phase 3:</strong></p>
+        <ul
+            style="list-style-type: none; font-size: 1.1rem; max-width: 800px; margin: 0 auto 2rem auto; padding-left: 0;">
+            <li>🐕 Ecosystem expansion with new integrations</li>
+            <li>🐕 Exploration of collaborations across different networks</li>
+            <li>🐕 Aggressive marketing (Global)</li>
+        </ul>
+    </section>
+
+    <section class="contract">
+        <h2>📜 $FLIP Contract Details</h2>
+        <p>
+            $Flip contract was developed by a few individuals who have strived for excellence and are committed to
+            bringing unimaginable gains through the power of smart contracts!
+        </p>
+        <p>
+            This contract contains a <strong>rebase mechanism</strong> which ensures $Flip's rapid rise. Every few days
+            the token supply is halved, accelerating value and growth beyond Bitcoin's four-year halving cycle—working
+            non-stop to reduce supply every hour and driving $Flip's price up!
+        </p>
+    </section>
+
 
     <section class="social-media">
         <h2>Join the Community 🌐</h2>
