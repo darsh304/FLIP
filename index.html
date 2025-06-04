@@ -28,10 +28,9 @@
             background:
                 linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
                 url('/img/banner.png') no-repeat center center;
-            background-size: contain;
-            /* ensures image is fully visible */
+            background-size: cover;
+            /* changed from contain to cover */
             background-color: #004d40;
-            /* fallback for empty areas */
             text-align: center;
             padding: 4rem 1rem;
             position: relative;
@@ -48,6 +47,25 @@
             background-repeat: no-repeat;
             background-position: center center;
         }
+
+        .social-top-icons {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            font-size: 1.5rem;
+        }
+
+        .social-top-icons a {
+            color: #ffffff;
+            margin-left: 15px;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .social-top-icons a:hover {
+            color: #ffd700;
+        }
+
 
         header h1 {
             font-size: 3rem;
@@ -211,6 +229,11 @@
     <header>
         <h1>FLIP: The Crypto Chihuahua</h1>
         <p>Small Dog. Big Vision. Bigger Chart.</p>
+        <div class="social-top-icons">
+            <a href="https://x.com/FlipOnETH" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://t.me/FlipOnETH" target="_blank"><i class="fab fa-telegram"></i></a>
+        </div>
+
     </header>
 
     <section class="intro">
@@ -317,21 +340,10 @@
         <p>Follow us on social media to stay updated!</p>
         <div class="social-icons">
             <a href="https://x.com/FlipOnETH" target="_blank"><i class="fab fa-twitter"></i></a> |
-            <!-- <a href="https://instagram.com/FlipCoin" target="_blank"><i class="fab fa-instagram"></i></a> | -->
             <a href="https://t.me/FlipOnETH" target="_blank"><i class="fab fa-telegram"></i> </a>
         </div>
     </section>
 
-    <!-- <section class="bar-graph">
-        <h2>FLIP Coin Growth 📈</h2>
-        <div class="bar-graph">
-            <div class="bar" style="height: 80%;"></div>
-            <div class="bar" style="height: 60%;"></div>
-            <div class="bar" style="height: 90%;"></div>
-            <div class="bar" style="height: 70%;"></div>
-        </div>
-        <p>Growth over the last few months!</p>
-    </section> -->
 
     <footer>
         <p>&copy; 2025 FLIP Coin — "The chart only goes up!" 🚀</p>
